@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/white_button_design"
+    android:id="@+id/linLayForBackground"
+    android:padding="5dp">
+<TextView
+    android:id="@+id/tvBloodGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood_drop"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_weight="1.5"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1.5"/>
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1.2"/>
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_margin="5dp"
+        android:background="@drawable/white_button_design"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        android:text="Talepte Bulun"/>
+</LinearLayout>

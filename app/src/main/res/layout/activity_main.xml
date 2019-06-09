@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".main.MainActivity">
+
+    <ImageView
+        android:src="@drawable/blood_background"
+        android:layout_width="fill_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/linLayScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+
+
+
+
+
+</RelativeLayout>

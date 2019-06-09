@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnTransfuseBlood"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_design"
+
+            android:text="Kan vermek istiyorum"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/btnFindBlood"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_design"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:text="Kan arıyorum"/>
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/cbHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shadow"
+        android:padding="15dp"
+        android:paddingStart="2dp"
+        android:buttonTint="@color/green"
+        android:text="Önceden kaydınız mı var ? "/>
+    <LinearLayout
+        android:id="@+id/linLayHaveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="TC Numaranızı Giriniz"
+            android:gravity="center"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnLoginBenefactor"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_button_design"
+                android:textColor="@color/black"
+                android:text="Kan veren girişi yap"
+                android:layout_marginEnd="10dp"/>
+            <Button
+                android:id="@+id/btnLoginFindBlood"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_button_design"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:text="Kan arayan girişi yap"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

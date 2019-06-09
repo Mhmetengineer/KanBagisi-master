@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userlist.ShowBenefactorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_edge_design"
+            android:layout_margin="5dp"
+            android:id="@+id/linLayForList"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="MÜSAİT OLAN BAĞIŞÇILAR"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Kan \n Grubu"
+                    android:layout_weight="1.4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="İsim"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.8"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="Saatleri arası müsait"
+                    android:layout_weight="1.2"/>
+
+            </LinearLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvBenefactorList"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/linLayForPage"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＜"
+                android:clickable="true"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:focusable="true" />
+            <Spinner
+                android:id="@+id/spinnerPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shadow"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＞"
+                android:clickable="true"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:focusable="true" />
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

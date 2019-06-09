@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".user.UserFragment">
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:background="@drawable/shadow"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:id="@+id/tvUserDataHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="MEVCUT BİLGİLERİNİZ"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edtSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyad"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edtTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TC"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Telefon Numarası"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail Adresi"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shadow"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:spinnerMode="dialog"
+            android:background="@drawable/shadow"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:spinnerMode="dialog"
+            android:background="@drawable/shadow"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+        android:id="@+id/edtAddress"
+        android:inputType="textMultiLine"
+        android:visibility="gone"
+        android:gravity="center"
+        android:maxLines="10"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+            android:background="@drawable/shadow"
+            android:textColor="@color/black"
+            android:padding="10dp"
+        android:hint="Adres"
+            android:layout_marginTop="20dp"
+        />
+        <Spinner
+            android:id="@+id/spinnerBlood"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:spinnerMode="dialog"
+            android:background="@drawable/shadow"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/linLayForBenefactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Hangi gün ve hangi saatler arası müsaitsiniz ? "
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Başlangıç saati"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bitiş saati"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"/></LinearLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rvDays"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scrollbars="vertical"/></androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCreateUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_button_design"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+
+    </LinearLayout></ScrollView>
+
+
+</LinearLayout>
